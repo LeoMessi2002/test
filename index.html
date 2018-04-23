@@ -1,0 +1,168 @@
+<doctype html>
+<html>
+<meta charset=utf-8>
+<head>
+    <title>L'Acqua</title>
+<!-- collegamento javascript
+   _____________________________________________________-->
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+<style>
+body {
+	background-image: url("/home/studente/L'acqua/img/29.jpg");
+	background-color:Red;
+	text color:Red;
+	color:green;
+}
+</style>
+<script>
+function calcola(){
+var r1=document.forms.quiz.d1.value;
+var r2=document.forms.quiz.d2.value;
+var r3=document.forms.quiz.d3.value;
+var r4=document.forms.quiz.d4.value;
+var r5=document.forms.quiz.d5.value;
+/* if(test logico){ conseguenza vero}
+else { conseguenza falso } */
+   var punteggio = 0;
+   if(r1 == 'si'){
+   var punteggio = 1;
+   }
+   if(r2 == 'si'){
+   var punteggio = punteggio + 1;
+   }
+   if(r3 == 'si'){
+   var punteggio = punteggio + 1;
+   }
+   if(r4 == 'si'){
+   var punteggio = punteggio + 1;
+   }
+   if(r5 == 'si'){
+   var punteggio = punteggio + 1;
+   }
+document.getElementById("punteggio").innerHTML="hai fatto "+ punteggio;
+}
+function Cancella(){
+document.getElementById("punteggio").innerHTML="";
+document.getElementById("commento").innerHTML="";
+}
+
+</script>
+  <script src=js/grafico.js></script>
+</head>
+<body>
+<div id=grafico></div>
+  
+
+
+<div class="container">
+ <div class="row">
+     	<div class="twelve columns">
+     	  <h1>L'Acqua</h1>
+         <img src=/home/studente/L'acqua/img/10.jpg class="u-full-width">
+	</div>
+ </div>
+  <div class="row">
+      <div class="twelve columns">
+			
+     </div>
+ </div>
+ <div class="row">
+     <div class="six columns">
+    <h1>L'Acqua in Rubinetto</h1>
+     <img src=/home/studente/L'acqua/img/88.jpg>
+     <p><b>L'Acqua</b>L'acqua (in greco ὕδωρ, ὕδατος) è un composto chimico di formula molecolare H2O, in cui i due atomi di idrogeno sono legati all'atomo di ossigeno con legame covalente polare. In condizioni di temperatura e pressione normali[9] si presenta come un sistema bifase – costituito da un liquido incolore[2] e insapore (che viene chiamato "acqua" in senso stretto) e da un gas incolore (detto vapore acqueo). Si presenta allo stato solido (detto ghiaccio) nel caso in cui la temperatura sia uguale o inferiore alla temperatura di congelamento.[10]</p>
+
+     </div>
+     <div class="six columns">
+     <h1>L'Acqua in Bottiglia</h1>
+      <img src=/home/studente/L'acqua/img/77.jpg>
+      <p><b>Goccio di Acqua</b>Il termine "acqua" deriva dal latino aqua,-ae che viene ricondotto alla radice indoeuropea ak- con il significato:di piegare: tale radice è presente nel sanscrito ak-na, piegato, come anche in altre lingue,[11].
+ </p>
+     </div>
+ </div>
+ <div class="row">
+     <div class="four columns">
+     <h2>L'Acqua Dolce</h2>
+     <img src=/home/studente/L'acqua/img/56.jpg class="u-full-width">
+     <p>
+
+Nel 2013 <b>L'Acqua</b>Il termine acqua dolce indica genericamente ogni tipo di corso d'acqua interno, derivato più o meno direttamente dallo scioglimento dei ghiacciai e/o dall'acqua piovana. La definizione esclude quindi tutte le acque marine e lagunari, definite salate e salmastre, e comprende quindi laghi, stagni, fiumi, torrenti e ruscelli, tutti corsi d'acqua caratterizzati, come vuole il nome, da una salinità relativamente bassa.
+</p>
+     </div>
+     <div class="four columns">
+     <h2>L'Acqua Salato</h2>
+      <img src=/home/studente/L'acqua/img/85.jpg class="u-full-width">
+     <p><b>L'Acqua</b>L'acqua di mare è l'acqua che costituisce i mari e gli oceani, in cui la concentrazione media dei sali disciolti è di 35 g/L (essa varia in base al mare preso in considerazione). Negli oceani e nei mari si possono trovare molte forme di vita, tra cui vegetazione e animali. </p>
+     </div>
+     <div class="four columns">
+     <h2>L'Acqua Linquinata</h2>
+          <img src=/home/studente/L'acqua/img/102.jpg class="u-full-width">
+     <p><b>L'Acqua</b> L'inquinamento idrico è un deterioramento legato agli ecosistemi che hanno come elemento principale l'acqua. Questo è causato da molteplici e specifici fattori: gli scarichi delle attività industriali e agricole e delle consuete attività umane che arrivano nei fiumi, nei laghi e nei mari[1].</p>
+     </div>
+ </div>
+ <div class="row">
+     <div class="ten columns">
+     <h1>L'Acqua Naturale</h1>
+	<img src=/home/studente/L'acqua/img/131.jpg class="u-full-width">
+	<p><b>L'Acqua</b>L'acqua minerale è un tipo di acqua sorgiva, solitamente commercializzata in bottiglia[1].</p>
+     </div>
+    <!-- div da b2 cloonne qui -->
+</div>
+
+ <div class="row">
+     <div class="ten columns">
+     <h1>L'Acqua Frizzante</h1>
+	<img src=/home/studente/L'acqua/img/119.jpg class="u-full-width">
+	<p><b>L'Acqua</b>L'acqua gassata[1], spesso denominata acqua frizzante[2], è acqua potabile nella quale è stata immessa anidride carbonica. Costituisce la base di molte bibite analcoliche dette soft drink (mentre per i cocktail si preferisce la più forte acqua di Seltz).</p>
+ </div>
+ <!-- div da b2 cloonne qui -->
+</div>
+	<div class=row>
+    <div class="twelve columns">
+<h2>Quiz sull'Acqua</h2>
+<form name=quiz>
+<p>1.Quanta parte della superficie terrestre è costituita 
+dall’acqua?</p>
+<input type=radio name=d1 value=no> 80%<br>
+<input type=radio name=d1 value=no> 75%<br>
+<input type=radio name=d1 value=si> 70%<br>
+<input type=radio name=d1 value=no> 65%<br>
+
+<p>2.100 anni fa la terra aveva...?</p>
+<input type=radio name=d2 value=si> circa la stessa acqua di oggi<br>
+<input type=radio name=d2 value=no> molta meno acqua di oggi<br>
+<input type=radio name=d2 value=no> molta più acqua di oggi<br>
+<input type=radio name=d2 value=no> pochissima acqua<br>
+
+<p>3.Quanta acqua che si trova in natura si può bere 
+tranquillamente?</p>
+<input type=radio name=d3 value=no> 95%<br>
+<input type=radio name=d3 value=si> 1%<br>
+<input type=radio name=d3 value=no> 35%<br>
+<input type=radio name=d3 value=no> 60%<br>
+
+<p>4. La maggior parte dell’acqua sulla terra non si può 
+bere perché...?</p>
+<input type=radio name=d4 value=no> è sporca<br>
+<input type=radio name=d4 value=no> puzza<br>
+<input type=radio name=d4 value=no> non si riesce a mettere nelle bottiglie<br>
+<input type=radio name=d4 value=si> è salata o ghiacciata<br>
+
+<p>5.Quanto potresti vivere senza bere?</p>
+<input type=radio name=d5 value=no> un giorno<br>
+<input type=radio name=d5 value=si> una settimana<br>
+<input type=radio name=d5 value=no> un mese<br>
+<input type=radio name=d5 value=no> tre mesi<br>
+<input type=reset value=Anulla onclick=Cancella()>
+<button type=button onclick=calcola()>Calcola il punteggio</button>
+</form>
+<p id=punteggio></p>
+<p id=commento></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
